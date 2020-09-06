@@ -1,0 +1,30 @@
+{
+  "name": "norwegian-phone",
+  "version": "1.0.0",
+  "description": "Distinguish norwegian landline and mobile phone numbers",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertSasak/norwegian-phone.git"
+  },
+  "keywords": [
+    "norway",
+    "norwegian",
+    "phone",
+    "mobile",
+    "landline",
+    "number"
+  ],
+  "author": "Robert Sasak <robert.sasak@gmail.com> (https://sasak.sk/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobertSasak/norwegian-phone/issues"
+  },
+  "homepage": "https://github.com/RobertSasak/norwegian-phone#readme",
+  "dependencies": {
+    "norwegian-utils": "0.3.1"
+  }
+}
