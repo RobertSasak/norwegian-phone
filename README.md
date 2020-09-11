@@ -7,7 +7,7 @@
 
 # norwegian-phone
 
-If you need to distinguish norwegian landlines from mobile numbers this library is for you. It is build on the top of amazing [unfold/norwegian-utils](https://github.com/unfold/norwegian-utils) utility library.
+If you need to distinguish norwegian landlines from mobile numbers this library is for you. It is built on the top of the amazing [unfold/norwegian-utils](https://github.com/unfold/norwegian-utils) utility library.
 
 ## Installation
 
@@ -20,7 +20,7 @@ npm install norwegian-phone
 or
 
 ```
-yarn install norwegian-phone
+yarn add norwegian-phone
 ```
 
 ## Usage
