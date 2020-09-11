@@ -50,29 +50,34 @@ var landlinePrefixes = [
 
 var mobilePrefixes = ['9', '4']
 
-function startWith(s, prefixes) {
+function startsWith(s, prefixes) {
   for (let key in prefixes) {
-    if (s.indexOf(prefixes[key]) == 0) {
+    if (s.substr(0, prefixes[key].length) === prefixes[key]) {
       return true
     }
   }
   return false
 }
 
+function normalize(number) {
+  // remove country code +47
+  return formatPhoneNumber.shortFormatPhoneNumber(number).substr(3)
+}
+
 function isLandline(number) {
   if (!formatPhoneNumber.isNorwegianPhoneNumber(number)) {
     return false
   }
-  var normalized = formatPhoneNumber.shortFormatPhoneNumber(number).substring(3)
-  return startWith(normalized, landlinePrefixes)
+  var normalized = normalize(number)
+  return startsWith(normalized, landlinePrefixes)
 }
 
 function isMobile(number) {
   if (!formatPhoneNumber.isNorwegianPhoneNumber(number)) {
     return false
   }
-  var normalized = formatPhoneNumber.shortFormatPhoneNumber(number).substring(3)
-  return startWith(normalized, mobilePrefixes)
+  var normalized = normalize(number)
+  return startsWith(normalized, mobilePrefixes)
 }
 
 module.exports = {
