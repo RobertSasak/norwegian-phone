@@ -29,6 +29,10 @@
     "url": "https://github.com/RobertSasak/norwegian-phone/issues"
   },
   "homepage": "https://github.com/RobertSasak/norwegian-phone#readme",
+  "files": [
+    "index.d.ts",
+    "src/index.js"
+  ],
   "dependencies": {
     "norwegian-utils": "0.3.1"
   },
